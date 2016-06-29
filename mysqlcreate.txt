@@ -1,0 +1,32 @@
+
+income and expenses
+1.建立database
+
+create database lifecost;
+
+2.建立資料表
+create table iande
+(
+  time timestamp,
+  income char(10),
+  expenses char(10),
+  備註 char(10)
+
+);
+
+3.insert Update delete 收入以及支出 備註事項
+insert into iande
+  (income, 備註)
+  values ( 4000, 'parttime');
+  
+insert into iande
+  (expenses, 備註)
+  values ( 600, 'eatbreakfast');
+  
+Update iande
+  set income = '5000',
+      備註='salary';
+delete from iande
+ where income =5000;
+      
+    
